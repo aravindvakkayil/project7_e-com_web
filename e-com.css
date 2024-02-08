@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+header{
+    background-color: rgb(185, 61, 179);
+    height: 4rem;
+    padding: 1rem 0;
+    min-width: 100%;
+}
+
+#logoimage{
+    height: 2.5rem;
+}
+header span{
+    color: azure;
+    font-family: cursive;
+    font-size: 1.5rem;
+}
+#logo{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+.material-symbols-outlined{
+    font-size: 1.5rem;
+}
+input {
+    padding: 4px;
+    border: none;
+    display: none;
+}
+
+.search-btn {
+    background-color: rgb(185, 61, 179);
+    color: #fff;
+    border: none;
+    padding: 1px 1px;
+    border-radius: 0 2px 2px 0;
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width:1300px ;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#menubutton{
+    font-size: 0.1rem;
+    background-color:rgb(185, 61, 179); 
+    border: none;
+}
+body{
+    background-color: rgb(255, 198, 207);
+}
+nav{
+    display: none;
+}
+h2{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    color: rgb(31, 13, 192);
+}
+.product img{
+    width: 100%;
+}
+.product{
+    border: 1px grey;  
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+#productlist{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 0.5rem;
+    margin-top: 2rem;
+}
+.mainimages{
+    padding: 1rem;
+    min-width: 100%;
+    max-width: 1300px;
+}
+.star-rating{
+    color: rgb(241, 171, 41);
+}
+.priceandbutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+}
+.addbutton{
+    padding: 0.3rem 0.5rem;
+    background-color: rgb(9, 153, 9);
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    transition: all 0.2s ease-out;
+    
+}
+.addbutton:hover{
+    background-color: rgb(143, 180, 41);
+}
+/* Styles for screens between 576px and 767.98px (Small devices) */
+@media (min-width: 576px)  {
+    /* Your styles for small screens go here */
+    #productlist{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Styles for screens between 768px and 991.98px (Medium devices) */
+@media (min-width: 768px) {
+    /* Your styles for medium screens go here */
+    #menubutton{
+        display: none;
+    }
+    nav{
+        display: block;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style: none;
+        gap: 1.5rem;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+    #productlist{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    input{
+        display: block;
+    }
+}
+
+/* Styles for screens between 992px and 1199.98px (Large devices) */
+@media (min-width: 992px) {
+    /* Your styles for large screens go here */
+    #productlist{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Styles for screens 1200px and larger (Extra Large devices) */
+@media (min-width: 1200px) {
+    /* Your styles for extra large screens go here */
+    #productlist{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+}
